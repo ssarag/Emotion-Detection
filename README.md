@@ -17,7 +17,7 @@ In order to create an image, we must translate the pixel values into their image
 
 Because some classes in the dataset contain a lot more examples than others, the dataset is a little bit skewed. Using RandomOverSampler, which oversamples the classes that are in lower numbers in a dataset, is one technique to get around this. It essentially replicates cases in the minority classes at random, which aids in balancing out the dataset. I have used RandomOverSampler to balance the dataset.
 
-#Creating CNN Model
+# Creating CNN Model
 I have used a CNN model to detect the emotions. Before training the model,the image emotion labels were converted to one-hot encoded, using to_categorical.Here we have 7 categories. And then, the model was trained for 30 epochs.
 
 
@@ -32,7 +32,7 @@ To predict the emotions I used two methods. In the first method I am predicting 
 ![image](https://user-images.githubusercontent.com/103538049/213876563-59cac80d-bb85-4466-8296-cb5a849c14ac.png)
 
 
-While, image 3 is predicted as sad, it actually represents 'angry'. So to understand how the algorithm is predicting images, next I am predicting the top 3 predicts for a given image and the reults are given below.
+While, image 3 is predicted as sad, it actually represents 'angry'. So to understand how the algorithm is predicting images, next I am predicting the top 3 predictions for a given image and the reults are given below.
 
 ![image](https://user-images.githubusercontent.com/103538049/213876950-365307cb-b320-4e6f-8fcd-a46b0bee6b8a.png)
 
